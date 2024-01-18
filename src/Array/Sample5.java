@@ -41,4 +41,14 @@ public class Sample5 {
         }
         return Palindromes;
     }
+    static int[] makeArray(int count, int mainNumber){
+        int[] Factors = new int[count];
+        int index = 0;
+        for (int num = 0; num < mainNumber; num++) {
+            if (prime(num) && mainNumber%num==0) {
+                Factors[index++] = num;
+            }
+        }
+        return Factors;
+    }
 }
