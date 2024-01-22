@@ -48,8 +48,24 @@ public class Strings1 {
                     sb.setCharAt(i,'?');
             System.out.println(sb);
 
+//Заменить первую букву на прописную
+            s = "what is JIT compiler in Java?";
+            sb = new StringBuilder(s);
+            s2 = s.substring(0,1);
+            s2= s2.toUpperCase();
+            Character c0 = s2.charAt(0);
+            sb.setCharAt(0,c0);
+            System.out.println(sb);
 
+            //Разбить строку на подстроки
+            s = "Access modifiers in Java are: \nDefault\nPrivate\nProtected\nPublic";
+            System.out.println(s);
 
+            //Удалить концевые пробелы
+            s = " Object-Oriented Programming or OOPs is a programming style that is associated with concepts like: "
+                    + "innheritance, encapsulation, polymorphism, abstraction. ";
+            String result = s.trim();
+            System.out.println(result);
         }
 
     }
